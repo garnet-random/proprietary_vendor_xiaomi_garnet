@@ -13,6 +13,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/garnet/proprietary/product/etc/permissions/UimGbaManager.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimGbaManager.xml \
     vendor/xiaomi/garnet/proprietary/product/etc/permissions/UimService.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimService.xml \
     vendor/xiaomi/garnet/proprietary/product/etc/permissions/privapp-permissions-euiccgoogle.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-euiccgoogle.xml \
+    vendor/xiaomi/garnet/proprietary/product/etc/permissions/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml \
     vendor/xiaomi/garnet/proprietary/system/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
     vendor/xiaomi/garnet/proprietary/system_ext/etc/init/vendor.qti.hardware.qccsyshal@1.2-service.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/vendor.qti.hardware.qccsyshal@1.2-service.rc \
     vendor/xiaomi/garnet/proprietary/system_ext/etc/init/wfdservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/wfdservice.rc \
@@ -33,8 +34,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/garnet/proprietary/vendor/etc/1-SN1X0_SPC.txt:$(TARGET_COPY_OUT_VENDOR)/etc/1-SN1X0_SPC.txt \
     vendor/xiaomi/garnet/proprietary/vendor/etc/acdbdata/Mise/Mise_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Mise/Mise_acdb_cal.acdb \
     vendor/xiaomi/garnet/proprietary/vendor/etc/acdbdata/Mise/Mise_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Mise/Mise_workspaceFileXml.qwsp \
-    vendor/xiaomi/garnet/proprietary/vendor/etc/acdbdata/Mise/foursemi/Mise_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Mise/foursemi/Mise_acdb_cal.acdb \
-    vendor/xiaomi/garnet/proprietary/vendor/etc/acdbdata/Mise/foursemi/Mise_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Mise/foursemi/Mise_workspaceFileXml.qwsp \
+    vendor/xiaomi/garnet/proprietary/vendor/etc/acdbdata/Mise/foursemi/Mise_acdb_cal_fs.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Mise/foursemi/Mise_acdb_cal_fs.acdb \
+    vendor/xiaomi/garnet/proprietary/vendor/etc/acdbdata/Mise/foursemi/Mise_workspaceFileXml_fs.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Mise/foursemi/Mise_workspaceFileXml_fs.qwsp \
     vendor/xiaomi/garnet/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.36_enpu2.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.36_enpu2.pmd \
     vendor/xiaomi/garnet/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.10.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.10.pmd \
     vendor/xiaomi/garnet/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.36_enpu2_comp.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.36_enpu2_comp.pmd \
@@ -638,6 +639,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/garnet/proprietary/vendor/etc/qcril_database/upgrade/config/12.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/12.0_config.sql \
     vendor/xiaomi/garnet/proprietary/vendor/etc/qcril_database/upgrade/config/13.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/13.0_config.sql \
     vendor/xiaomi/garnet/proprietary/vendor/etc/qcril_database/upgrade/config/14.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/14.0_config.sql \
+    vendor/xiaomi/garnet/proprietary/vendor/etc/qcril_database/upgrade/config/16.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/16.0_config.sql \
     vendor/xiaomi/garnet/proprietary/vendor/etc/qcril_database/upgrade/config/6.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/6.0_config.sql \
     vendor/xiaomi/garnet/proprietary/vendor/etc/qcril_database/upgrade/config/7.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/7.0_config.sql \
     vendor/xiaomi/garnet/proprietary/vendor/etc/qcril_database/upgrade/config/8.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/8.0_config.sql \
@@ -968,7 +970,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/garnet/proprietary/vendor/lib64/liblx-ar_util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblx-ar_util.so \
     vendor/xiaomi/garnet/proprietary/vendor/lib64/liblx-osal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblx-osal.so \
     vendor/xiaomi/garnet/proprietary/vendor/lib64/libmcs.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmcs.so \
-    vendor/xiaomi/garnet/proprietary/vendor/lib64/libmispowerop.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmispowerop.so \
     vendor/xiaomi/garnet/proprietary/vendor/lib64/libpalclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpalclient.so \
     vendor/xiaomi/garnet/proprietary/vendor/lib64/libqtigefar.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqtigefar.so \
     vendor/xiaomi/garnet/proprietary/vendor/lib64/libresampler.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libresampler.so \
@@ -979,6 +980,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/garnet/proprietary/vendor/lib64/vendor.qti.hardware.pal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.pal@1.0.so
 
 PRODUCT_PACKAGES += \
+    vendor.qti.diaghal-V1-ndk \
     eglSubDriverAndroid \
     libEGL_adreno \
     libGLESv1_CM_adreno \
@@ -1971,8 +1973,6 @@ PRODUCT_PACKAGES += \
     misound_res_spk \
     misound_res_spk4ch \
     misound_res_spk_fs \
-    misound_res_spk_power_game \
-    misound_res_spk_power_video \
     lib-imsvideocodec \
     lib-imsvt \
     lib-imsvtextutils \
@@ -2013,8 +2013,10 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.qccsyshal@1.2 \
     vendor.qti.hardware.qccvndhal@1.0 \
     vendor.qti.hardware.wifidisplaysession@1.0 \
+    vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk \
     vendor.qti.imsrtpservice@3.0 \
     vendor.qti.imsrtpservice@3.1 \
+    vendor.qti.qccsyshal_aidl-V1-ndk \
     vendor.qti.qccvndhal_aidl-V1-ndk \
     fingerprint.fpc_fod.default \
     fingerprint.goodix_fod.default \
@@ -2029,14 +2031,14 @@ PRODUCT_PACKAGES += \
     TrustZoneAccessService \
     uimgbaservice \
     EuiccGoogle \
-    HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND \
     HotwordEnrollmentXGoogleHEXAGON_WIDEBAND \
+    HotwordEnrollmentYGoogleHEXAGON_WIDEBAND \
     AtFwd2 \
     ImsRcsService \
     PowerOffAlarm \
     QCC \
-    QtiTelephony \
     QtiTelephonyService \
+    QtiTelephony \
     WfdService \
     ims \
     qcrilmsgtunnel \

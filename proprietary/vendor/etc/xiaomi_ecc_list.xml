@@ -33,10 +33,20 @@
     <EccEntry Ecc="112" Category="1" Condition="1" Plmn="214 07"/>
 
     <!-- Add for AURORA-28284 -->
-    <EccEntry Ecc="101" Category="1" Condition="2" Plmn="250 02"/>
-    <EccEntry Ecc="102" Category="4" Condition="2" Plmn="250 02"/>
+    <EccEntry Ecc="101" Category="4" Condition="2" Plmn="250 02"/>
+    <EccEntry Ecc="102" Category="1" Condition="2" Plmn="250 02"/>
     <EccEntry Ecc="103" Category="2" Condition="2" Plmn="250 02"/>
     <EccEntry Ecc="104" Category="0" Condition="2" Plmn="250 02"/>
+
+    <!-- BUGM11AUPV-1224 -->
+    <EccEntry Ecc="101" Category="4" Condition="2" Plmn="250 20"/>
+    <EccEntry Ecc="102" Category="1" Condition="2" Plmn="250 20"/>
+    <EccEntry Ecc="103" Category="2" Condition="2" Plmn="250 20"/>
+    <EccEntry Ecc="104" Category="0" Condition="2" Plmn="250 20"/>
+    <EccEntry Ecc="101" Category="4" Condition="2" Plmn="250 99"/>
+    <EccEntry Ecc="102" Category="1" Condition="2" Plmn="250 99"/>
+    <EccEntry Ecc="103" Category="2" Condition="2" Plmn="250 99"/>
+    <EccEntry Ecc="104" Category="0" Condition="2" Plmn="250 99"/>
 
     <EccEntry Ecc="191" Category="4" Condition="2" Plmn="414 FFF"/>
     <EccEntry Ecc="192" Category="2" Condition="2" Plmn="414 FFF"/>
@@ -246,7 +256,11 @@
     <EccEntry Ecc="119" Category="6" Condition="1" Plmn="440 FFF"/>
 
     <!--add for Nigeria-->
-    <EccEntry Ecc="767" Category="0" Condition="2" Plmn="621 FFF"/>
+    <EccEntry Ecc="767" Category="0" Condition="2" Plmn="621 20"/>
+    <EccEntry Ecc="767" Category="0" Condition="1" Plmn="621 24"/>
+    <EccEntry Ecc="767" Category="0" Condition="2" Plmn="621 50"/>
+    <EccEntry Ecc="767" Category="0" Condition="2" Plmn="621 60"/>
+    <EccEntry Ecc="767" Category="0" Condition="2" Plmn="621 30"/>
 
     <!-- Add for Korea operator xiaomi -->
     <EccEntry Ecc="111" Category="7" Condition="1" Plmn="450 FFF"/>
@@ -279,13 +293,12 @@
  
     <!-- xiaomi end -->
     <!-- xiaomi begin -->
-    <!-- maweiying HSHENNONG-33099 add china ecc for xiaomi -->
+    <!-- 1/maweiying HSHENNONG-33099 add china ecc for xiaomi  2/ BUGO3-11437 REVERT -->
     <EccEntry Ecc="112" Category="0" Condition="1" Plmn="460 FFF"/>
     <EccEntry Ecc="000" Category="0" Condition="1" Plmn="460 FFF"/>
     <EccEntry Ecc="08" Category="0" Condition="1" Plmn="460 FFF"/>
     <EccEntry Ecc="118" Category="0" Condition="1" Plmn="460 FFF"/>
-    <EccEntry Ecc="911" Category="2" Condition="1" Plmn="460 FFF"/>
-    <EccEntry Ecc="999" Category="0" Condition="1" Plmn="460 11"/>
+    <EccEntry Ecc="911" Category="0" Condition="1" Plmn="460 FFF"/>  
     <!-- xiaomi end -->
     <!--xiaomi Ireland-->
     <EccEntry Ecc="999" Category="0" Condition="1" Plmn="272 FFF"/>
@@ -349,6 +362,7 @@
     <!-- Add for Malaysis Digi operator xiaomi-->
     <EccEntry Ecc="999" Category="0" Condition="1" Plmn="502 FFF"/>
     <EccEntry Ecc="999" Category="1" Condition="1" Plmn="502 153"/>
+    <EccEntry Ecc="911" Category="1" Condition="1" Plmn="502 153"/>
     <EccEntry Ecc="112" Category="1" Condition="1" Plmn="502 153"/>
     <EccEntry Ecc="991" Category="0" Condition="1" Plmn="502 19"/>
     <EccEntry Ecc="994" Category="0" Condition="1" Plmn="502 19"/>
@@ -382,9 +396,9 @@
     <EccEntry Ecc="199" Category="4" Condition="2" Plmn = "202 FFF" />
     
     <!-- Add for Czech Republic operator xiaomi-->
-    <EccEntry Ecc="150" Category="0" Condition="2" Plmn = "230 01" />
-    <EccEntry Ecc="155" Category="0" Condition="2" Plmn = "230 01" />
-    <EccEntry Ecc="158" Category="0" Condition="2" Plmn = "230 01" />
+    <EccEntry Ecc="150" Category="0" Condition="5" Plmn = "230 01" />
+    <EccEntry Ecc="155" Category="0" Condition="5" Plmn = "230 01" />
+    <EccEntry Ecc="158" Category="0" Condition="5" Plmn = "230 01" />
 
     <!-- Add for United Kingdom operator xiaomi-->
     <EccEntry Ecc="999" Category="0" Condition="1" Plmn = "234 FFF" />
@@ -414,11 +428,6 @@
     <!-- Add for United States operator -->
     <EccEntry Ecc="*911" Category="0" Condition="1" Plmn = "310 FFF" />
     <EccEntry Ecc="#911" Category="0" Condition="1" Plmn = "310 FFF" />
-
-    <!-- Add for slovakia operator xiaomi-->
-    <EccEntry Ecc="150" Category="0" Condition="2" Plmn = "231 01" />
-    <EccEntry Ecc="155" Category="0" Condition="2" Plmn = "231 01" />
-    <EccEntry Ecc="158" Category="0" Condition="2" Plmn = "231 01" />
 
     <EccEntry Ecc="150" Category="0" Condition="5" Plmn = "231 03" />
     <EccEntry Ecc="155" Category="0" Condition="5" Plmn = "231 03" />
@@ -455,11 +464,10 @@
     <!-- Add for afghanistan operator xiaomi-->
 
     <!-- Add for slovenia operator xiaomi-->
-    <EccEntry Ecc="113" Category="0" Condition="1" Plmn = "293 40" />
-    <EccEntry Ecc="1987" Category="0" Condition="1" Plmn = "293 40" />
-    <EccEntry Ecc="116000" Category="0" Condition="1" Plmn = "293 40" />
-    <EccEntry Ecc="116123" Category="0" Condition="1" Plmn = "293 40" />
-    <EccEntry Ecc="116111" Category="0" Condition="1" Plmn = "293 40" />
+    <EccEntry Ecc="1987" Category="0" Condition="2" Plmn = "293 40" />
+    <EccEntry Ecc="116000" Category="0" Condition="2" Plmn = "293 40" />
+    <EccEntry Ecc="116123" Category="0" Condition="2" Plmn = "293 40" />
+    <EccEntry Ecc="116111" Category="0" Condition="2" Plmn = "293 40" />
 
     <EccEntry Ecc="113" Category="0" Condition="5" Plmn = "293 70" />
     <!-- Add for slovenia operator xiaomi-->
@@ -515,12 +523,34 @@
     <EccEntry Ecc="116111" Category="0" Condition="2" Plmn = "424 FFF" />
     <!--add UAE xiaomi -->
 
-    <!--add saudiarabia xiaomi -->
-    <EccEntry Ecc="999" Category="0" Condition="1" Plmn = "420 FFF" />
-    <EccEntry Ecc="998" Category="0" Condition="1" Plmn = "420 FFF" />
-    <EccEntry Ecc="997" Category="0" Condition="1" Plmn = "420 FFF" />
-    <EccEntry Ecc="993" Category="0" Condition="1" Plmn = "420 FFF" />
-    <!--add saudiarabia xiaomi -->
+    <!--add  saudiarabia MIUIROM-2047312 xiaomi -->
+    <EccEntry Ecc="911" Category="0" Condition="1" Plmn = "420 01" />
+    <EccEntry Ecc="994" Category="0" Condition="1" Plmn = "420 01" />
+    <EccEntry Ecc="996" Category="0" Condition="1" Plmn = "420 01" />
+    <EccEntry Ecc="997" Category="0" Condition="1" Plmn = "420 01" />
+    <EccEntry Ecc="998" Category="0" Condition="1" Plmn = "420 01" />
+    <EccEntry Ecc="999" Category="0" Condition="1" Plmn = "420 01" />
+	
+    <EccEntry Ecc="911" Category="0" Condition="1" Plmn = "420 03" />
+    <EccEntry Ecc="994" Category="0" Condition="1" Plmn = "420 03" />
+    <EccEntry Ecc="996" Category="0" Condition="1" Plmn = "420 03" />
+    <EccEntry Ecc="997" Category="0" Condition="1" Plmn = "420 03" />
+    <EccEntry Ecc="998" Category="0" Condition="1" Plmn = "420 03" />
+    <EccEntry Ecc="999" Category="0" Condition="1" Plmn = "420 03" />
+
+    <!--add  saudiarabia BUGO11U-19759 xiaomi -->
+    <EccEntry Ecc="993" Category="0" Condition="2" Plmn = "420 04" />
+    <EccEntry Ecc="997" Category="0" Condition="2" Plmn = "420 04" />
+    <EccEntry Ecc="998" Category="0" Condition="2" Plmn = "420 04" />
+    <EccEntry Ecc="999" Category="0" Condition="2" Plmn = "420 04" />
+    <EccEntry Ecc="993" Category="0" Condition="2" Plmn = "420 09" />
+    <EccEntry Ecc="997" Category="0" Condition="2" Plmn = "420 09" />
+    <EccEntry Ecc="998" Category="0" Condition="2" Plmn = "420 09" />
+    <EccEntry Ecc="999" Category="0" Condition="2" Plmn = "420 09" />
+    <EccEntry Ecc="993" Category="0" Condition="2" Plmn = "420 10" />
+    <EccEntry Ecc="997" Category="0" Condition="2" Plmn = "420 10" />
+    <EccEntry Ecc="998" Category="0" Condition="2" Plmn = "420 10" />
+    <EccEntry Ecc="999" Category="0" Condition="2" Plmn = "420 10" />
 
     <!--add saudiarabia xiaomi -->
     <EccEntry Ecc="999" Category="0" Condition="1" Plmn = "427 FFF" />
@@ -653,7 +683,16 @@
     <EccEntry Ecc="115" Category="0" Condition="2" Plmn = "510 01" />
     <EccEntry Ecc="119" Category="0" Condition="2" Plmn = "510 01" />
 
-  
+    <!-- Add for Indonesia 510 21 -->
+    <!-- modify for jira:MIUIROM-1948853-->
+    <EccEntry Ecc="110" Category="1" Condition="1" Plmn = "510 21" />
+    <EccEntry Ecc="113" Category="0" Condition="1" Plmn = "510 21" />
+    <EccEntry Ecc="118" Category="0" Condition="1" Plmn = "510 21" />
+
+    <EccEntry Ecc="123" Category="0" Condition="2" Plmn = "510 21" />
+    <EccEntry Ecc="115" Category="0" Condition="2" Plmn = "510 21" />
+    <EccEntry Ecc="119" Category="0" Condition="2" Plmn = "510 21" />
+
     <!-- Add for Indonesia Three operator -->
     <EccEntry Ecc="110" Category="1" Condition="1" Plmn = "510 89" />
     <EccEntry Ecc="113" Category="0" Condition="1" Plmn = "510 89" />
@@ -689,7 +728,9 @@
 
     <!-- Add for Singapore operator xiaomi-->
     <EccEntry Ecc="999" Category="0" Condition="1" Plmn = "525 03" />
+    <EccEntry Ecc="995" Category="2" Condition="1" Plmn = "525 03" />
     <EccEntry Ecc="999" Category="1" Condition="1" Plmn = "525 05" />
+    <EccEntry Ecc="995" Category="2" Condition="1" Plmn = "525 05" />
     <EccEntry Ecc="999" Category="31" Condition="1" Plmn = "525 01" />
 
     <!-- Add for Chile operator xiaomi-->
@@ -707,14 +748,24 @@
     <!-- Peru operator xiaomi-->
     <EccEntry Ecc="105" Category="0" Condition="1" Plmn = "716 10" />
     <EccEntry Ecc="105" Category="0" Condition="1" Plmn = "716 06" />
+    <EccEntry Ecc="105" Category="0" Condition="1" Plmn = "716 17" />
     <!-- Peru operator xiaomi-->
 
     <!-- Bolivia operator xiaomi-->
     <EccEntry Ecc="110" Category="1" Condition="1" Plmn = "736 FFF" /> 
     <!-- Bolivia operator xiaomi-->
-	 <!-- Add for Hungary operator xiaomi-->
+    <!-- Add for Hungary operator xiaomi-->
     <EccEntry Ecc="104" Category="31" Condition="3" Plmn = "216 70" />
     <EccEntry Ecc="105" Category="31" Condition="3" Plmn = "216 70" />
     <EccEntry Ecc="107" Category="31" Condition="3" Plmn = "216 70" />
-<!-- Add for Hungary operator xiaomi-->
+    <!-- Add for Hungary operator xiaomi-->
+
+    <!-- Add for Bhutan operator xiaomi-->
+    <EccEntry Ecc="110" Category="4" Condition="1" Plmn = "402 11" />
+    <EccEntry Ecc="112" Category="2" Condition="1" Plmn = "402 11" />
+    <EccEntry Ecc="113" Category="1" Condition="1" Plmn = "402 11" />
+    <EccEntry Ecc="110" Category="4" Condition="1" Plmn = "402 17" />
+    <EccEntry Ecc="112" Category="2" Condition="1" Plmn = "402 17" />
+    <EccEntry Ecc="113" Category="1" Condition="1" Plmn = "402 17" />
+    <!-- Add for Bhutan operator xiaomi-->
 </EccTable>
