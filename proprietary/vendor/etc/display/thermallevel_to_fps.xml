@@ -10,14 +10,14 @@ Confidential and Proprietary - Qualcomm Technologies, Inc.
         <Device version="1">
             <ThermalLevelMap level="1" fps="144"/>
             <ThermalLevelMap level="2" fps="144"/>
-            <ThermalLevelMap level="3" fps="120"/>
-            <ThermalLevelMap level="4" fps="120"/>
-            <ThermalLevelMap level="5" fps="90"/>
-            <ThermalLevelMap level="6" fps="90"/>
-            <ThermalLevelMap level="7" fps="90"/>
-            <ThermalLevelMap level="8" fps="60"/>
-            <ThermalLevelMap level="9" fps="60"/>
-            <ThermalLevelMap level="10" fps="60"/>
+            <ThermalLevelMap level="3" fps="144"/>
+            <ThermalLevelMap level="4" fps="144"/>
+            <ThermalLevelMap level="5" fps="144"/>
+            <ThermalLevelMap level="6" fps="144"/>
+            <ThermalLevelMap level="7" fps="144"/>
+            <ThermalLevelMap level="8" fps="90"/>
+            <ThermalLevelMap level="9" fps="90"/>
+            <ThermalLevelMap level="10" fps="90"/>
         </Device>
     </DeviceSettingList>
 </ThermalLevelToFPSMap>

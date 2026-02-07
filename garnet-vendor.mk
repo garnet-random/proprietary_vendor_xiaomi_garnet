@@ -876,8 +876,14 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/garnet/proprietary/vendor/lib64/libOpenCL_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOpenCL_adreno.so \
     vendor/xiaomi/garnet/proprietary/vendor/lib64/libadreno_compiler_cl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadreno_compiler_cl.so \
     vendor/xiaomi/garnet/proprietary/vendor/lib64/libdmabufheap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdmabufheap.so \
-    vendor/xiaomi/garnet/proprietary/vendor/lib64/libgamepoweroptfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgamepoweroptfeature.so
- 
+    vendor/xiaomi/garnet/proprietary/vendor/lib64/libgamepoweroptfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgamepoweroptfeature.so \
+    vendor/xiaomi/garnet/proprietary/vendor/etc/thermal-boost.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-boost.conf \
+    vendor/xiaomi/garnet/proprietary/vendor/etc/thermal-engine-pubgmhd.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-pubgmhd.conf \
+    vendor/xiaomi/garnet/proprietary/vendor/etc/thermal-highfps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-highfps.conf \
+    vendor/xiaomi/garnet/proprietary/vendor/etc/thermal-l18a-map.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-l18a-map.conf \
+    vendor/xiaomi/garnet/proprietary/vendor/etc/thermal-region-map.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-region-map.conf \
+    vendor/xiaomi/garnet/proprietary/vendor/etc/thermal-youtube.config:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-youtube.config
+
 PRODUCT_PACKAGES += \
     vendor.qti.diaghal-V1-ndk \
     eglSubDriverAndroid \
